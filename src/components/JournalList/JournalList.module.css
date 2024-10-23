@@ -1,0 +1,10 @@
+.journal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.no-tasks {
+  font-size: 20px;
+  color: rgb(97, 97, 97);
+}

@@ -1,0 +1,12 @@
+.card-button {
+  display: block;
+  text-align: left;
+  padding: 20px 15px;
+  background-color: rgb(39, 39, 39);
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.25s;
+}
+.card-button:hover {
+  background-color: rgb(48 47 47);
+}

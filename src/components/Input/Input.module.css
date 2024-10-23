@@ -1,0 +1,67 @@
+.form-input {
+  background: none;
+  border: none;
+  font-size: 15px;
+  transition: background 0.2s;
+  padding: 10px;
+  cursor: text;
+}
+
+.form-input:focus-visible {
+  outline: none;
+  background: rgba(63, 63, 63, 0.3);
+}
+
+.form-input:hover {
+  background: rgba(63, 63, 63, 0.3);
+}
+
+.form-input[name="date"]::after {
+  position: absolute;
+  content: "Дата";
+  font-weight: 600;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(121, 121, 121);
+}
+
+.form-input[name="date"]::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(./calendar.svg) no-repeat center / contain;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-input__settings {
+  position: relative;
+  padding-left: 150px;
+  border-bottom: 1px solid rgb(121, 121, 121);
+}
+
+.form-input__title {
+  font-size: 24px;
+}
+
+.form-input[name="tag"] {
+  width: 100%;
+}
+
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  background: none;
+  left: 10px;
+}
+
+.invalid-form {
+  background: rgba(255, 0, 0, 0.3) !important;
+  transition: background 0.2s;
+}
+
+.invalid-form:hover {
+  background: rgba(255, 0, 0, 0.35) !important;
+}

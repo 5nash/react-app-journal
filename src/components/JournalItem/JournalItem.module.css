@@ -1,0 +1,28 @@
+.journal-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  background-color: rgb(39, 39, 39);
+}
+
+.journal-item__title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.journal-item__content {
+  display: flex;
+  font-size: 13px;
+  gap: 10px;
+}
+
+.journal-item__date {
+  color: rgb(65, 64, 64);
+}
+
+.journal-item__text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(105, 103, 103);
+}

@@ -1,0 +1,82 @@
+.journal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-input {
+  background: none;
+  border: none;
+  font-size: 15px;
+  transition: background 0.2s;
+  padding: 10px;
+  cursor: text;
+}
+
+.form-input:focus-visible {
+  outline: none;
+  background: rgba(63, 63, 63, 0.3);
+}
+
+.form-input:hover {
+  background: rgba(63, 63, 63, 0.3);
+}
+
+#post_text {
+  min-height: 500px;
+  resize: none;
+}
+
+#form-tag {
+  position: relative;
+  display: flex;
+}
+
+#form-tag::after {
+  position: absolute;
+  content: "Метки";
+  font-weight: 600;
+  font-size: 15px;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(121, 121, 121);
+  pointer-events: none;
+}
+
+#form-tag::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(./folder.svg) no-repeat center / contain;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.invalid-form {
+  background: rgba(255, 0, 0, 0.3) !important;
+  transition: background 0.2s;
+}
+
+.invalid-form:hover {
+  background: rgba(255, 0, 0, 0.35) !important;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button {
+  background: none !important;
+  width: 50px !important;
+  height: 40px !important;
+  padding: 0 !important;
+}
+
+.delete-button img {
+  width: 100%;
+  height: 100%;
+}
